@@ -19,7 +19,7 @@
         <form id="search-form">
           <input
             type="search"
-            placeholder="Enter a city.."
+            placeholder="Please enter a city.."
             required
             class="search-input"
             id="search-input"
@@ -30,27 +30,36 @@
       <main>
         <div class="current-weather">
           <div>
-            <h1 class="current-city" id="current-city">Paris</h1>
+            <h1 class="current-city" id="current-city"></h1>
             <p class="current-details">
               <span id="current-date"></span>, moderate rain <br />
-              Humidity: <strong>87%</strong>, Wind: <strong>7.2km/h</strong>
+              Humidity: <strong id="humidPercent"></strong>, Wind:
+              <strong id="windSpeed">7.2km/h</strong>
             </p>
           </div>
           <div class="current-temperature">
-            <span class="current-temperature-icon">☀️</span
-            ><span
+            <span class="current-temperature-icon">☀️</span>
+            <span
               class="current-temperature-value"
               id="current-temperature-value"
               >24</span
-            ><span class="current-temperature-unit">°C</span>
+            >
+
+            <span class="current-temperature-unit">°C</span>
           </div>
         </div>
       </main>
       <footer>
         <div>
           This page was coded by
-          <a href="https://github.com/itcodegirl" target="_blank"></a>
-        </div>
+          <href="https://github.com/itcodegirl" target="_blank">Jenna Zawaski</a>
+
+		  an open sourced on 
+
+		  <href="https://github.com/itcodegirl/js_search_engine_2" target="_blank">GitHub</a>
+
+		  and hosted on 
+        </div> <href="href="https://app.netlify.com/teams/" target="_blank">Netlify</a>
       </footer>
     </div>
   </body>
