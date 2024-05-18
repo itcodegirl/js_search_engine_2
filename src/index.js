@@ -8,7 +8,10 @@ function showWeather(response) {
 	//humidity
 	let humidityElement = document.querySelector("#humidPercent");
 	humidityElement.innerHTML = `${response.data.temperature.humidity}%`
-	//let descriptionElement  = 
+	//wind
+	let windSpeedElement = document.querySelector('#windSpeed');
+	windSpeedElement.innerHTML = `${response.data.wind.speed}km/h`;
+
 }
 
 function search(event) {
