@@ -13,6 +13,7 @@
     <title>My weather application</title>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   </head>
+
   <body>
     <div class="weather-app">
       <header>
@@ -27,41 +28,53 @@
           <input type="submit" value="Search" class="search-button" />
         </form>
       </header>
+
       <main>
         <div class="current-weather">
-          <div>
-            <h1 class="current-city" id="current-city"></h1>
-            <p class="current-details">
-              <span id="current-date"></span>
-			</br>
-			</br>
-              Humidity: <strong id="humidPercent"></strong>, Wind:
-              <strong id="windSpeed"></strong>
-            </p>
-          </div>
-          <div class="current-temperature">
-            <span class="current-temperature-icon">☀️</span>
-            <span
-              class="current-temperature-value"
-              id="current-temperature-value"
-              >24</span
-            >
+          <h1 class="current-city" id="current-city"></h1>
+          <p class="current-details">
+            <strong id="current-date"></strong>
+            <br />
+            <br />
+            Weather Conditions:
+            <strong id="weather-conditions"></strong>
+            <br />
+            <br />
+            Humidity: <strong id="humidPercent"></strong>
+            <br />
+            <br />
+            Wind:
+            <strong id="windSpeed"></strong>
+          </p>
+        </div>
 
-            <span class="current-temperature-unit">°C</span>
-          </div>
+        <div class="current-temperature">
+          <span class="current-temperature-icon">☀️</span>
+          <span class="current-temperature-value" id="current-temperature-value"
+            >24</span
+          >
+
+          <span class="current-temperature-unit">°C</span>
         </div>
       </main>
+
       <footer>
         <div>
           This page was coded by
-          <href="https://github.com/itcodegirl" target="_blank">Jenna Zawaski</a>
-
-		  an open sourced on 
-
-		  <href="https://github.com/itcodegirl/js_search_engine_2" target="_blank">GitHub</a>
-
-		  and hosted on 
-        </div> <href="https://app.netlify.com/teams/" target="_blank">Netlify</a>
+          <a href="https://github.com/itcodegirl" target="_blank"
+            ><strong>Jenna Zawaski</strong></a
+          >
+          an open sourced on
+          <a
+            href="https://github.com/itcodegirl/js_search_engine_2"
+            target="_blank"
+            ><strong>GitHub</strong></a
+          >
+          and hosted on
+          <a href="https://app.netlify.com/teams/" target="_blank"
+            ><strong>Netlify</strong></a
+          >
+        </div>
       </footer>
     </div>
   </body>
