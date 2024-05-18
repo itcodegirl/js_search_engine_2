@@ -5,6 +5,9 @@ function showWeather(response) {
 	let cityElement = document.querySelector("#current-city");
 	cityElement.innerHTML = response.data.city;
 	temperatureElement.innerHTML = Math.round(temperature);
+	//weather.description
+	let descriptionElement = document.querySelector('#weather-conditions');
+	descriptionElement.innerHTML = `${response.data.condition.description}`;
 	//humidity
 	let humidityElement = document.querySelector("#humidPercent");
 	humidityElement.innerHTML = `${response.data.temperature.humidity}%`
